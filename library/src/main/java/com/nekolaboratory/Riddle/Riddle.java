@@ -6,17 +6,17 @@ package com.nekolaboratory.Riddle;
 
 public class Riddle {
 
-    Core stellaCore;
+    Core riddleCore;
 
     public void initialize(int loopDeley, RiddleCallback callback) {
-        stellaCore = new Core(loopDeley, callback);
+        riddleCore = new Core(loopDeley, callback);
     }
 
     public void start() {
-        stellaCore.start();
+        riddleCore.start();
     }
 
     public void stop() {
-        stellaCore.stop();
+        riddleCore.stop();
     }
 }
