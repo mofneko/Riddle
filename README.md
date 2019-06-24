@@ -25,7 +25,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.mofneko:Riddle:0.1.0'
+    compile 'com.github.mofneko:Riddle:0.1.1'
 }
 ```
 
