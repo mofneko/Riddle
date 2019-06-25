@@ -42,11 +42,17 @@ Step1. Handling DebuggerAttachDetectDelegate
 Step2. Detect
 
 ```kotlin
-        var Riddle = Riddle()
-        Riddle.initialize(3000, detectCallback)
+        var riddle = Riddle()
+        riddle.initialize(3000, detectCallback)
         button.setOnClickListener {
-            Riddle.start()
+            riddle.start()
         }
+```
+
+NOTE: To improve performance, stop detection when it is not necessary.
+
+```kotlin
+            riddle.start()
 ```
 
 ##### C# (Unity)
@@ -80,6 +86,13 @@ and execute Detect.
         Riddle.Call("start");
         }
     }
+```
+
+To improve performance, stop detection when it is not necessary.
+
+```C# (Unity)
+        // The stop function is an instance method.
+        Riddle.Call("stop");
 ```
 
 # Development
